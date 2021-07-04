@@ -1,0 +1,89 @@
+/* Setting Default Browser size */
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+/* Navbar Logo and image */
+#logo {
+  height: 39px;
+  margin: 20px 31px;
+  width: 50px;
+}
+/* Navigation Bar */
+#navbar {
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 0px;
+}
+#navbar::before {
+  top: 0;
+  content: "";
+  background-color: black;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+/* Navbar Logo and image */
+#navbar ul {
+  display: flex;
+}
+#navbar ul li {
+  font-size: 30px;
+}
+#navbar ul li a {
+  color: white;
+  font-weight: bold;
+  padding: 3px 22px;
+  border-radius: 20px;
+}
+#navbar ul li a:hover,
+#navbar ul li a.active {
+  color: black;
+  background-color: white;
+}
+/* User creation section */
+.user {
+  margin-top: 50px;
+  margin-left: 500px;
+  position: relative;
+  width: 600px;
+  height: 450px;
+  background-color: rgb(231, 224, 224);
+  border: darkred;
+  border-radius: 100px soliid white;
+}
+/* user image styling */
+img {
+  height: 300px;
+  display: inline-block;
+  padding: 5px 20px;
+  border: 5px soliid black;
+}
+/* user form styling */
+.user-item {
+  display: inline-block;
+  font-size: 20px;
+  padding: 5px 20px;
+  font-weight: bold;
+}
+.user h1 {
+  background-color: rgb(69, 167, 93);
+  text-align: center;
+  font-weight: bold;
+  padding: 30px;
+}
+.button {
+  width: 100px;
+  margin-top: 20px;
+  padding: 10px 10px;
+  color: white;
+  background-color: brown;
+  font-weight: bold;
+  border-radius: 40px;
+  cursor: pointer;
+}

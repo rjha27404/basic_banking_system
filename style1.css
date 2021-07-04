@@ -1,0 +1,148 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+/* Body styling */
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+#navbar::before{
+    top: 0;
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+/* Navbar Logo and image */
+#logo{
+    height: 39px;
+    margin: 20px 31px;
+    width: 50px;
+}
+/* #logo img{
+    height: 39px;
+    margin: 20px 31px;
+    width: 50px;
+} */
+
+/* Navbar List styling */
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    font-size: 30px;
+}
+#navbar ul li a{
+    color:white;
+    font-weight: bold;
+    padding: 3px 22px;
+    border-radius: 20px;
+}
+#navbar ul li a:hover, #navbar ul li a.active{
+    color: black;
+    background-color: white;
+}
+
+/* Home Section */
+#home{
+    height: 300px;
+    display: flex;
+    padding: 3px 200px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    top: 0;
+    content: "";
+    background:url("transfer.jpg") no-repeat center center/cover;
+    position: absolute;
+    height: 500px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+#home h1{
+    padding: 50px;
+    font-size: 50px;
+    color: black;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#home p{
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.btn{
+    padding: 8px 25px;
+    border: 2px solid white;
+    background-color: brown;
+    margin: 20px 100px;
+    color: white;
+    font-size: 17px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn a{
+    color: white;
+}
+/* Services Container */
+#services
+{
+    display: flex;
+    margin: 35px;
+}
+#services .box{
+    background-color: rgb(231, 224, 224);
+    margin: 150px 100px 0 80px;
+    padding: 20px;
+    width: 20%;
+    border: 2px solid brown;
+    border-radius: 23px;
+}
+#services img{
+    height: 180px;
+    margin: auto;
+    display: block;
+}
+#services .box p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+/* Footer */
+footer{
+    background: black;
+    color: white;
+    padding: 10px 30px;
+    height: 60px;
+}
+
+/* Utility classes */
+.h-primary{
+    font-size: 40px;
+    padding: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.h-secondary{
+    font-size: 15px;
+    padding: 15px;
+}
+.center{
+    text-align: center;
+    align-items:center
+}
